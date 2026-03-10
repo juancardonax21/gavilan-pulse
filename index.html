@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gavilán PULSE</title>
+<meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbx7G811932XKdDVjDNJnoWwNl1p10GLf3nHq9QrkhqB8Oz2ee7q_kawrB1AA51I-k-C/exec">
+<script>
+  // Preservar parámetro ?id= si viene de Looker
+  const id = new URLSearchParams(window.location.search).get('id');
+  const base = 'https://script.google.com/macros/s/AKfycbx7G811932XKdDVjDNJnoWwNl1p10GLf3nHq9QrkhqB8Oz2ee7q_kawrB1AA51I-k-C/exec';
+  window.location.replace(id ? base + '?id=' + encodeURIComponent(id) : base);
+</script>
+</head>
+<body></body>
+</html>
